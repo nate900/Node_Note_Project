@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+<body>
+    <div>
+        <h2>Create a new note.</h2>
+    </div>
+    <%- include('./partials/nav.ejs') %>
+    <div class="main-content content">
+        <section class="new-note-form">
+            <form class="note-form" action="new-note/create" method="post">
+                <label for="title">Note Name:</label>
+                <input id="title" name="title" type="text" required>
+                <label for="snippet">Note Snippet:</label>
+                <input id="snippet" name="snippet" type="text" required>
+                <label for="body">Note Body:</label>
+                <textarea id="body" name="body" required></textarea>
+                <button>Submit</button>
+            </form>
+        </section>
+    </div>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

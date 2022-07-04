@@ -1,0 +1,39 @@
+body{
+    max-width: 1200px;
+    margin: 25px auto;
+}
+
+button{
+
+}
+
+.plus{
+    font-size: 3rem;
+}
+
+.nav-contain{
+
+}
+
+.navigation{
+    max-width: 100%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.navigation ul{
+    list-style: none;
+    display: flex;
+}
+
+.navigation ul li{
+    flex: 50%;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+}
+
+.navigation ul li a:hover{
+    
+}
