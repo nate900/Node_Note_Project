@@ -11,7 +11,8 @@ const Note = require('./models/note');
 const app = express();
 
 // database access, mongoDb
-const dbURI = 'mongodb+srv://BlogUser:user@cluster0.3fufkks.mongodb.net/?retryWrites=true&w=majority';
+// use your own username and password in the 'dbURI' string
+const dbURI = 'mongodb+srv://<username>:<password>@cluster0.3fufkks.mongodb.net/?retryWrites=true&w=majority';
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then( result => {
