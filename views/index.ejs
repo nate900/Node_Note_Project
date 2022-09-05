@@ -6,19 +6,21 @@
         <h2>Nat's Note Book</h2>
     </div>
     <%- include('./partials/nav.ejs') %>
-    <div class="main-content content">
-        <h2>All Notes</h2>
-        <section class="notes">
-            <% if(Notes.length > 0) {Notes.forEach(note => { %>
-                <div class="note">
-                    <a href="/notes/<%= note._id %>"><h3><%= note.title %></h3>
-                    <p><%= note.snippet %></p></a>
-                    <a class="delete" data-del="<%= note._id %>"><img src="/images/check.svg"></a>
-                </div>
-            <% })} else{ %>
-                 <p>There are no notes. </p>
-              <% } %>
-        </section>
+    <div class="main">
+        <header class="index-header"><h2>All Notes</h2></header>
+        <div class="note-contain">
+            <section class="notes">
+                <% if(Notes.length > 0) {Notes.forEach(note => { %>
+                    <div class="note">
+                        <a href="/notes/<%= note._id %>"><h3><%= note.title %></h3>
+                        <p><%= note.snippet %></p></a>
+                        <a class="delete" data-del="<%= note._id %>"><img src="/images/check.svg"></a>
+                    </div>
+                <% })} else{ %>
+                    <p>There are no notes. </p>
+                <% } %>
+            </section>
+        </div>
     </div>
     <%- include('./partials/footer.ejs') %>
     <script src="/js/deleteNote.js"></script> 

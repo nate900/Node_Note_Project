@@ -1,39 +1,158 @@
 body{
     max-width: 1200px;
     margin: 25px auto;
+    background-color: #d9ed92;
 }
 
-button{
-
+*{
+    color: #184e77;
 }
 
-.plus{
-    font-size: 3rem;
+.main{
+    width: 100%;
 }
 
 .nav-contain{
-
+    
 }
 
 .navigation{
-    max-width: 100%;
+    max-width: 25%;
+    max-height: 200px;
     margin: auto;
-    border: 1px solid black;
+    display: block;
 }
 
 .navigation ul{
     list-style: none;
-    display: flex;
-}
-
-.navigation ul li{
-    flex: 50%;
+    position: relative;
 }
 
 .navigation ul li a{
     text-decoration: none;
 }
 
-.navigation ul li a:hover{
-    
+.navigation ul li a img{
+    max-width: 100%;
+    text-decoration: none;
+}
+
+.navigation ul li a img:hover{
+    cursor: pointer;
+}
+
+.left-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right-link{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.index-header{
+
+}
+
+.index-header h2{
+    position: relative;
+    top: 2rem;
+}
+
+.note-contain{
+    position: absolute;
+}
+
+.single-note{
+    position: relative;
+    top: 4rem;
+}
+
+.notes{
+    margin: 2rem 1rem;
+}
+
+.note{
+    padding: 1rem;
+    margin: 20px auto;
+    border: 3px solid black;
+    border-radius: 5px;
+    min-width: 50vw;
+    background-color: #99d98c;
+}
+
+.note *{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.note h3{
+    display: block;
+    font-size: 1.6em;
+}
+
+.note p{
+    word-wrap:break-word;
+    word-break: break-all;
+    font-size: 1.25em;
+}
+
+.delete{
+    margin: 15px;
+    padding-left: 1rem;
+    float: right;
+}
+
+.delete:hover{
+    cursor: pointer;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    border-radius: 50%;
+}
+
+.new-note-form{
+}
+
+.note-form{
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.note-form *{
+    display: block;
+    width: 25%;
+    margin: auto;
+    margin-top: 1rem;
+    font-size: 1.4em;
+}
+
+.note-form label{
+    border-top: 1px solid black;
+    padding: .30em;
+}
+
+.note-form input{
+}
+
+.note-form textarea{
+    min-width: 200px;
+    min-height: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.note-form button{
+    font-size: 1.6em;
+    background-color: #34a0a4;
+    border: none;
+    border-radius: 5px;
+}
+
+.note-form button:hover{
+    cursor: pointer;
+    background-color: #52b69a;
 }

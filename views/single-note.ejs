@@ -3,9 +3,9 @@
     <%- include('./partials/head.ejs') %>
 <body>
     <%- include('./partials/nav.ejs') %>
-    <div class="note-container">
-        <div class="trashcan-wrapper"><a class="delete" data-del="<%= Note._id %>"><img src="/images/trashcan.svg" alt="delete icon"></a></div>
-        <section class="note-content">
+    <div class="single-note">
+        <%- include('./partials/trashcan.ejs'); %>
+        <section class="note">
             <%- include('./partials/note-details.ejs') %>
         </section>
     </div>
